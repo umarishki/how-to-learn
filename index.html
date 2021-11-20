@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Способы легко воспринимать информацию и запоминать ее">
+  <meta name="author" content="Соколова Марина">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
@@ -12,17 +14,17 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="logo logo__place_header"></div>
+      <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать
-        в своей жизни? <a class="header__subtitle-link" href="#">Узнать &rarr;</a></p>
+        в своей жизни? <a class="header__subtitle-link" href="#problem">Узнать &rarr;</a></p>
       <div class="header__square-pic"></div>
-      <div class="header__main-illustration"></div>
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Картинка: Опять двойка!"> 
     </header>
     <main class="content">
       <section class="description">
-        <div class="content__two_columns">
-          <h2 class="two_columns__brief">Главные проблемы в обучении</h2>
+        <div class="two_columns">
+          <h2 class="two_columns__brief" id="problem">Главные проблемы в обучении</h2>
           <div class="two_columns__main-text">
             <p class="two_columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно
               изучать материал.
@@ -83,7 +85,7 @@
       <section class="feynman">
         <h1 class="feynman__title">Метод Фейнмана</h1>
         <h2 class="feynman__subtitle">Выучить и не забыть.</h2>
-        <a class="feynman__link" href="#">Подробнее &rarr;</a>
+        <a class="feynman__link" href="#" target='_blank'>Подробнее &rarr;</a>
       </section>
 
       <section class="kaufman">
@@ -137,23 +139,23 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <div class="logo logo__place_footer"></div>
+          <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy; Marina Sokolova</p>
         </div>
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <ul class="footer__column-links">
-            <li class="footer__column-row"><a class="footer__column-link">Главная</a></li>
-            <li class="footer__column-row"><a class="footer__column-link">Концепция</a></li>
-            <li class="footer__column-row"><a class="footer__column-link">Наставники</a></li>
+            <li><a class="footer__column-link" href="#">Главная</a></li>
+            <li><a class="footer__column-link" href="#">Концепция</a></li>
+            <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </div>
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links">
-            <li class="footer__column-row"><img src="./images/facebook_color_white.svg" class="footer__social-icon"><a class="footer__column-link">Facebook</a></li>
-            <li class="footer__column-row"><img src="./images/vk_color_white.svg" class="footer__social-icon"><a class="footer__column-link">Вконтакте</a></li>
-            <li class="footer__column-row"><img src="./images/instagram_color_white.svg" class="footer__social-icon"><a class="footer__column-link">Instagram</a></li>
+            <li><a class="footer__column-link" href="#"><img src="./images/facebook_color_white.svg" class="footer__social-icon">Facebook</a></li>
+            <li><a class="footer__column-link" href="#"><img src="./images/vk_color_white.svg" class="footer__social-icon">Вконтакте</a></li>
+            <li><a class="footer__column-link" href="#"><img src="./images/instagram_color_white.svg" class="footer__social-icon">Instagram</a></li>
           </ul>
         </div>
       </div>
