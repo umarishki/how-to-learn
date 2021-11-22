@@ -1,10 +1,3 @@
-h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-weight: normal;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -48,6 +41,9 @@ h1, h2, h3, p, ul {
 }
 
 .header__title {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -57,6 +53,9 @@ h1, h2, h3, p, ul {
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
@@ -67,10 +66,9 @@ h1, h2, h3, p, ul {
   z-index: 1;
 }
 
-.header__subtitle-link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
-
 }
 
 .header__main-illustration {
@@ -96,13 +94,16 @@ h1, h2, h3, p, ul {
   margin-top: 100px;
 }
 
-.two_columns {
+.two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
 
-.two_columns__brief {
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -110,25 +111,28 @@ h1, h2, h3, p, ul {
   color: #2f80ed;
 }
 
-.two_columns__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   display: flex;
   flex-direction: column;
 }
 
-.two_columns__paragraph {
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two_columns__paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
-.two_columns__span-accent {
+.two-columns__span-accent {
   font-weight: 700;
 }
 
@@ -137,9 +141,13 @@ h1, h2, h3, p, ul {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-title {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -149,6 +157,9 @@ h1, h2, h3, p, ul {
 }
 
 .section-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -157,6 +168,8 @@ h1, h2, h3, p, ul {
 }
 
 .table {
+  margin: 0;
+  padding: 0;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -170,12 +183,18 @@ h1, h2, h3, p, ul {
 }
 
 .table__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 .table__text {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -183,7 +202,8 @@ h1, h2, h3, p, ul {
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
+  background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-size: 867px 637px;
   background-position: left bottom;
@@ -192,6 +212,9 @@ h1, h2, h3, p, ul {
 }
 
 .feynman__title {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
@@ -202,6 +225,9 @@ h1, h2, h3, p, ul {
 }
 
 .feynman__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   width: 648px;
   line-height: 51px;
   font-size: 36px;
@@ -264,17 +290,17 @@ h1, h2, h3, p, ul {
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
+  display: flex;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
 }
 
 .footer__columns {
   width: 90%;
   color: white;
-  min-height: 250px;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  padding-top: 60px;
-  margin-bottom: 40px;
+  margin: 0 auto;
 }
 
 .footer__column_content_copyright {
@@ -294,6 +320,9 @@ h1, h2, h3, p, ul {
 }
 
 .footer__author {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -303,13 +332,17 @@ h1, h2, h3, p, ul {
 }
 
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .footer__column-links {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -327,6 +360,7 @@ h1, h2, h3, p, ul {
   color: white;
 }
 
-.footer__column-links li:last-child .footer__column-link {
+.footer__column-links {
+  margin-top: 20px;
   margin-bottom: 16px;
 }
