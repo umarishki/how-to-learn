@@ -1,0 +1,9 @@
+.cards__item {
+    margin-right: 100px;
+    margin-top: 60px;
+    max-width: 240px;  /* от наставника: в будущем, чтобы не указывать ширину так, лучше в таких блоках применять гриды */
+  }
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0;
+}
