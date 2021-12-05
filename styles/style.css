@@ -22,6 +22,10 @@
   color: #000000;
 }
 
+.rotation {
+  animation: rotation 20s linear 0s infinite running;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -77,6 +81,7 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity 0.3s linear;
 }
 
 .header__main-illustration {
@@ -94,7 +99,6 @@
   position: absolute;
   top: 64px;
   right: 0px;
-  animation: rotation 20s linear 0s infinite running;
 }
 
 .description {
@@ -148,7 +152,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  padding-bottom: 100px;
+  margin-bottom: 100px; /* отдельный класс?*/
 }
 
 .section-title {
@@ -243,6 +247,7 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  transition: opacity 0.3s linear;
 }
 
 .kaufman{
@@ -264,7 +269,6 @@
   position: absolute;
   top: 0;
   right: -210px;
-  animation: rotation 20s linear 0s infinite running; /* миксы*/
 }
 
 .section-title_theme_dark {
@@ -364,7 +368,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding-top: 100px; /* перенести марджин заголовка в модифицкатор */
+  margin-top: 100px; /* перенести марджин заголовка в модифицкатор */
 }
 
 .cards {
@@ -378,7 +382,7 @@
 .cards__item {
   margin-right: 100px;
   margin-top: 60px;
-  width: 240px;
+  max-width: 240px;  /* от наставника: в будущем, чтобы не указывать ширину так, лучше в таких блоках применять гриды */
 }
 
 .cards__item:nth-of-type(3) {
@@ -386,15 +390,19 @@
 }
 
 .cards__title {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700px;
+  margin-top: 43px;
 }
 
 .cards__description {
+  margin: 0;
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 16px;
 }
 
 .cards__image {
@@ -405,7 +413,7 @@
 }
 
 .video {
-  padding-top: 100px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -485,6 +493,7 @@
 .khan__book-container {
   margin-top: 68px;
   display: flex;
+  align-items: flex-start;
 }
 
 .khan__book-pic {
@@ -494,7 +503,7 @@
   background-size: cover;
 }
 
-.buy-link {
+.khan__buy-link {
   margin: 0;
   line-height: 42px;
   font-size: 30px;
@@ -502,6 +511,8 @@
   text-decoration: none;
   color: #2f80ed;
   margin-left: 48px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
 }
 
 .resources {
@@ -509,16 +520,23 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 217px;
 }
 
 .resources__logo-zone {
   width: 1100px;
-  margin-top: 80px;
-  margin-bottom: 217px;
+  padding: 0;
+  margin: 80px 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .resources__logo {
   width: 270px;
   height: 38px;
 }
-      
+
+.link-visibility:hover {
+  opacity: 0.5;
+}
